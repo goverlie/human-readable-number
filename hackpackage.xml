@@ -1,0 +1,20 @@
+<hackpackage>
+  <name>Display Learn Release in Human Readable Format</name>
+  <identifier>human-release-number</identifier>
+  <description>This hack replaces the build number in the system admin tab with a human readable release name. This Hack will need updating when a new version is applied.</description>
+  <version>1.0</version>
+  <targetVersionMin>9.1+</targetVersionMin>
+  <developerName>Gary Overliese</developerName>
+  <developerInstitution>Charles Darwin University</developerInstitution>
+  <developerURL>http://www.cdu.edu.au</developerURL>
+  <developerEmail>gary.overliese@cdu.edu.au</developerEmail>
+  <hook>jsp.topFrame.start</hook>
+  <restrictions>
+    <restriction>
+      <type>REQUEST_PARAMETER</type>
+      <value>tab_tab_group_id=_YOUR_SYSADMIN_PANEL</value>
+      <inverse>false</inverse>
+    </restriction>
+  </restrictions>
+  <resources/>
+</hackpackage>
